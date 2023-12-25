@@ -22,6 +22,9 @@ export const ReactRenderingOrder = () => {
     // useLayoutEffect는 useEffect보다 먼저 실행됨 (paint이전에 layout단계에서 실행되기 떄문)
     useLayoutEffect(() => {
         console.log('A')
+        setTimeout(() => {
+            setState(false)
+        },3000)
     }, []);
 
     return (
