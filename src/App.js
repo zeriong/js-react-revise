@@ -9,8 +9,8 @@ function App() {
             Hello World!
         </h1>
         {/*<ReactRenderingOrder/>*/}
-        {/*<DeepCopy/>*/}
-        <Hoisting/>
+        <DeepCopy/>
+        {/*<Hoisting/>*/}
     </div>
   );
 }
