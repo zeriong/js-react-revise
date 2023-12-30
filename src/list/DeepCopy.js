@@ -21,32 +21,49 @@
 
 export const DeepCopy = () => {
     let obj = { str: 100, dex: 200, int: 1 };
+    let arr = ['Hi!', obj, 123, true];
 
     /*
     얕은 복사가 아닌 완전히 독립적인 오브젝트로 복사하기 위해서는
-    스프레드함수(...)와 slice 매서드를 사용할 수 있다.
+    스프레드함수(...)와 배열은 slice, 객체는 assign 매서드를 사용할 수 있다.
     */
     let copyObj = {...obj};
+    let copyArr = [...arr];
 
     obj.dex = 4444;
     obj.str = 4444;
     obj.int = 4444;
 
+    arr.pop();
+
     copyObj.dex = 9999;
+
+    copyArr.shift();
 
     console.log('origin obj: ',obj);
     console.log('copy obj(use spread): ',copyObj);
 
     console.log('--------------------------------------------------------');
 
+    console.log('origin arr: ',obj);
+    console.log('copy arr(use spread): ',copyArr);
+
+    console.log('--------------------------------------------------------');
+
     let copyObj2 = Object.assign({}, copyObj);
+    let copyArr2 = arr.slice();
 
     copyObj2.dex = 0;
     copyObj2.int = 100000;
 
-    console.log('copy1: ', copyObj);
-    console.log('copy2(use assign): ', copyObj2);
+    copyArr2.push(false);
 
+    console.log('obj copy1: ', copyObj);
+    console.log('obj copy2(use assign): ', copyObj2);
+
+    console.log('--------------------------------------------------------');
+    console.log('arr copy1: ',copyArr);
+    console.log('arr copy2(use slice): ',copyArr2);
     return (
         <div>
             DeepCopy
