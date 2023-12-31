@@ -1,6 +1,7 @@
 import {ReactRenderingOrder} from './list/ReactRenderingOrder';
 import {DeepCopy} from './list/DeepCopy';
 import {Hoisting} from './list/Hoisting';
+import {TradeValue} from './list/TradeValue';
 
 function App() {
   return (
@@ -9,8 +10,9 @@ function App() {
             Hello World!
         </h1>
         {/*<ReactRenderingOrder/>*/}
-        <DeepCopy/>
+        {/*<DeepCopy/>*/}
         {/*<Hoisting/>*/}
+        <TradeValue/>
     </div>
   );
 }
