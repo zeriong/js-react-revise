@@ -1,7 +1,8 @@
 import {ReactRenderingOrder} from './list/ReactRenderingOrder';
 import {DeepCopy} from './list/DeepCopy';
 import {Hoisting} from './list/Hoisting';
-import {TradeValue} from './list/TradeValue';
+import {SwapValue} from './list/SwapValue';
+import {UseRefAndUseState} from './list/UseRefAndUseState';
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
         {/*<ReactRenderingOrder/>*/}
         {/*<DeepCopy/>*/}
         {/*<Hoisting/>*/}
-        <TradeValue/>
+        {/*<SwapValue/>*/}
+        <UseRefAndUseState/>
     </div>
   );
 }
