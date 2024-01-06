@@ -3,7 +3,7 @@ import {DeepCopy} from './list/DeepCopy';
 import {Hoisting} from './list/Hoisting';
 import {SwapValue} from './list/SwapValue';
 import {UseRefAndUseState} from './list/UseRefAndUseState';
-
+import {HandMadeUseState} from './list/HandMadeUseStateComponent';
 function App() {
   return (
     <div>
@@ -14,7 +14,8 @@ function App() {
         {/*<DeepCopy/>*/}
         {/*<Hoisting/>*/}
         {/*<SwapValue/>*/}
-        <UseRefAndUseState/>
+        {/*<UseRefAndUseState/>*/}
+        <HandMadeUseState/>
     </div>
   );
 }

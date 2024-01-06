@@ -16,8 +16,6 @@ export const UseRefAndUseState = () => {
 
         const random = Math.round(Math.random() * 10);
         target.style.color = colorList[random];
-
-        console.log(random)
     };
 
     // 컴포넌트 리렌더링 시 콘솔로그 발생
