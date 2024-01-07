@@ -3,15 +3,19 @@
 import {root} from '../index';
 import App from '../App';
 
-let _state;
+// 이전 상태를 기억할 수 있도록 확장
+let cursor = 0;
+const states = [];
 
 export function useState(initState) {
-    if (_state === undefined) _state = initState;
+    let localCursor = cursor;
 
-    const state = _state;
+    if (cursor === states.length) states.push(initState);
 
-    function setState(newValue) {
-        _state = newValue;
+    const state = states[cursor];
+
+    function setState(newState) {
+        states[localCursor] = newState;
         root.render(<App/>); // setState내부 렌더 매서드 예시 구현
     }
 
