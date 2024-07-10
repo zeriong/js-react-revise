@@ -10,12 +10,12 @@ function App() {
         <h1>
             Hello World!
         </h1>
-        {/*<ReactRenderingOrder/>*/}
+        <ReactRenderingOrder/>
         {/*<DeepCopy/>*/}
         {/*<Hoisting/>*/}
         {/*<SwapValue/>*/}
         {/*<UseRefAndUseState/>*/}
-        <HandMadeUseState/>
+        {/*<HandMadeUseState/>*/}
     </div>
   );
 }
