@@ -1,7 +1,7 @@
 /** 직접 만든 useState */
 
-import {root} from '../index';
-import App from '../App';
+import {root} from '../../index';
+import App from '../../App';
 
 // 이전 상태를 기억할 수 있도록 확장
 let cursor = 0;
