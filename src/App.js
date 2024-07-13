@@ -7,6 +7,7 @@ import {HandMadeUseState} from './list/handMadeUseState/HandMadeUseStateComponen
 import NoneMemoComponent from "./list/reactMemo/noneMemo/NoneMemoComponent";
 import UsingMemoComponent from "./list/reactMemo/usingMemo/UsingMemoComponent";
 import ReactMemoLearnComponent from "./list/reactMemo/ReactMemoLearnComponent";
+import UseCallbackComponent from "./list/useCallback/UseCallbackComponent";
 function App() {
   return (
     <div>
@@ -14,7 +15,8 @@ function App() {
             Hello World!
         </h1>
 
-        <ReactMemoLearnComponent/>
+        <UseCallbackComponent/>
+        {/*<ReactMemoLearnComponent/>*/}
         {/*<ReactRenderingOrder/>*/}
         {/*<DeepCopy/>*/}
         {/*<Hoisting/>*/}
