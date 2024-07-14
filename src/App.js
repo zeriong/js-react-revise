@@ -8,14 +8,15 @@ import NoneMemoComponent from "./list/reactMemo/noneMemo/NoneMemoComponent";
 import UsingMemoComponent from "./list/reactMemo/usingMemo/UsingMemoComponent";
 import ReactMemoLearnComponent from "./list/reactMemo/ReactMemoLearnComponent";
 import UseCallbackComponent from "./list/useCallback/UseCallbackComponent";
+import UseMemoComponent from "./list/useMemo/UseMemoCompnent";
 function App() {
   return (
     <div>
         <h1>
             Hello World!
         </h1>
-
-        <UseCallbackComponent/>
+        <UseMemoComponent/>
+        {/*<UseCallbackComponent/>*/}
         {/*<ReactMemoLearnComponent/>*/}
         {/*<ReactRenderingOrder/>*/}
         {/*<DeepCopy/>*/}
