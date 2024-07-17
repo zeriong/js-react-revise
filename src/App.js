@@ -9,13 +9,15 @@ import UsingMemoComponent from "./list/reactMemo/usingMemo/UsingMemoComponent";
 import ReactMemoLearnComponent from "./list/reactMemo/ReactMemoLearnComponent";
 import UseCallbackComponent from "./list/useCallback/UseCallbackComponent";
 import UseMemoComponent from "./list/useMemo/UseMemoCompnent";
+import {UseIdComponent} from "./list/useId/UseIdComponent";
 function App() {
   return (
     <div>
         <h1>
             Hello World!
         </h1>
-        <UseMemoComponent/>
+        <UseIdComponent/>
+        {/*<UseMemoComponent/>*/}
         {/*<UseCallbackComponent/>*/}
         {/*<ReactMemoLearnComponent/>*/}
         {/*<ReactRenderingOrder/>*/}
