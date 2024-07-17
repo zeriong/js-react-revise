@@ -4,7 +4,8 @@ import NoneMemoComponent from "./noneMemo/NoneMemoComponent";
 const ReactMemoLearnComponent = () => {
 
     // 컴포넌트를 React.memo 를 활용해서 리렌더링 최적화가 가능한 것은 오직
-    // "부모 요소로 부터 받은 전달 받은 props 에 의한 리렌더링" 만을 방지해준다.
+    // "부모 요소로 부터 받은 전달 받은 props 에 의한 리렌더링" 을 방지해주는 것이 궁극적이고
+    // 컴포넌트를 세부화 한다면 React.memo 를 활용해서 더 많은 최적화를 할 수 있을 것이다.
 
     // 그렇기 때문에 React.memo 를 활용한 컴포넌트는 각 인풋에 문자열을 입력할 경우
     // 각 인풋이 가진 콘솔 로그만을 실행하게 되고, [ Parent Input ] 요소에서 submit 했을 때만
