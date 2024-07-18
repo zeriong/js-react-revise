@@ -1,4 +1,4 @@
-export const UseIdComponent = () => {
+const UseIdComponent = () => {
     return (
         <div>
             <p>
@@ -10,3 +10,4 @@ export const UseIdComponent = () => {
         </div>
     )
 }
+export default UseIdComponent;
