@@ -2,7 +2,7 @@ import React from 'react';
 import {useState} from './HandMadeUseState';
 
 /** 직접 만든 useState 실행 확인 */
-export const HandMadeUseState = () => {
+export default function HandMadeUseState() {
     // initState를 설정
     const [state, setState] = useState(1);
 

@@ -4,7 +4,7 @@
 
 import {useRef, useState} from 'react';
 
-export const UseRefAndUseState = () => {
+export default function UseRefAndUseState() {
     const colorList = ['red', 'potato', 'tomato', 'skyBlue', 'gray', 'black', 'yellow', 'blue', 'green'];
 
     const inputRef = useRef(null);

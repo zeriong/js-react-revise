@@ -1,5 +1,5 @@
 /**
- * 원시타입(number, string, boolean, symbol, null, undefined)의 경우는 변수에 할당 될 때
+ * 원시타입(number, string, boolean, symbol, null, undefined ...)의 경우는 변수에 할당 될 때
  * 메모리상에 값이 직접적으로 할당된다.
  * -------------------------------------------------------------------------------------------------------
  * 참조타입(object, array, function, Data, Set, Map 등)의 경우는 값이 메모리상에 모두 할당되는 것이 아닌
@@ -19,54 +19,96 @@
  * 얕은 복사를 하기 위한 방법론은 아래 컴포넌트 참조!
  * */
 
-export const DeepCopy = () => {
-    let obj = { str: 100, dex: 200, int: 1 };
-    let arr = ['Hi!', obj, 123, true];
-
+export default function DeepCopy() {
     /*
-    얕은 복사가 아닌 완전히 독립적인 오브젝트로 복사하기 위해서는
-    스프레드함수(...)와 배열은 slice, 객체는 assign 매서드를 사용할 수 있다.
+      얕은 복사가 아닌 완전히 독립적인 오브젝트로 복사하기 위해서는
+      스프레드함수(...)와 배열은 slice, 객체는 assign 매서드를 사용할 수 있다.
     */
+    console.log('----------- 스프레드 연산자를 활용한 obj 복사 예시 ------------');
+
+    let obj = { str: 100, dex: 200, int: 1 };
+    console.log('원본 객체 obj: ', obj);
+
     let copyObj = {...obj};
-    let copyArr = [...arr];
+    console.log('obj를 스프레드연산자를 통해 변수 copyObj에 할당');
+    console.log('obj: ', obj);
+    console.log('copyObj: ', copyObj);
+
+    console.log('---------------------------------------------------------');
 
     obj.dex = 4444;
     obj.str = 4444;
     obj.int = 4444;
+    console.log('obj 내부 모든 키에 숫자 4444를 할당');
+    console.log('obj: ', obj);
+    console.log('copyObj: ', copyObj);
 
-    arr.pop();
+    console.log('---------------------------------------------------------');
 
     copyObj.dex = 9999;
+    console.log('copyObj의 "dex" value에 9999를 할당');
+    console.log('obj: ', obj);
+    console.log('copyObj: ', copyObj);
 
-    copyArr.shift();
+    console.log('---------------------------------------------------------');
 
-    console.log('origin obj: ',obj);
-    console.log('copy obj(use spread): ',copyObj);
+    console.log('결과적으로 완벽히 독립적으로 값이 변경된 것을 확인');
+    console.log('obj: ', obj);
+    console.log('copyObj: ', copyObj);
 
-    console.log('--------------------------------------------------------');
 
-    console.log('origin arr: ',obj);
-    console.log('copy arr(use spread): ',copyArr);
-
-    console.log('--------------------------------------------------------');
+    console.log('\n\n\n');
+    console.log('-------------- Object의 assign을 활용한 복사 ---------------');
 
     let copyObj2 = Object.assign({}, copyObj);
-    let copyArr2 = arr.slice();
+    console.log('이전에 복사한 copyObj를 copyObj2 라는 변수에 Object.assign을\n활용하여 복사 할당');
+    console.log('copyObj: ', copyObj);
+    console.log('copyObj2: ', copyObj2);
 
     copyObj2.dex = 0;
     copyObj2.int = 100000;
+    console.log('copyObj2 내부 dex, int에 각각 0, 100000 값을 할당');
+    console.log('objCopy: ', copyObj);
+    console.log('objCopy2: ', copyObj2);
 
-    copyArr2.push(false);
 
-    console.log('obj copy1: ', copyObj);
-    console.log('obj copy2(use assign): ', copyObj2);
+    console.log('\n\n\n');
+    console.log('-------- 스프레드 연산자를 활용한 배열 복사 ---------');
+
+    let arr = ['Hi!', obj, 123, true];
+    let copyArr = [...arr];
+    console.log('arr을 스프레드연산자를 통해 변수 copyArr에 할당');
+    console.log('arr: ', arr);
+    console.log('copyArr: ', copyArr);
 
     console.log('--------------------------------------------------------');
-    console.log('arr copy1: ',copyArr);
-    console.log('arr copy2(use slice): ',copyArr2);
+
+    arr.pop();
+    copyArr.shift();
+    console.log('arr은 pop(), copyArr는 shift() 하여 배열 변경');
+    console.log('arr: ', arr);
+    console.log('copyArr: ', copyArr);
+
+
+    console.log('\n\n\n');
+    console.log('-------------- slice를 활용한 배열 복사 ------------');
+
+    let copyArr2 = copyArr.slice();
+    console.log('copyArr에 slce 매서드를 사용하여 재구성시켜\ncopyArr2 변수에 할당');
+    console.log('copyArr: ', copyArr);
+    console.log('copyArr2: ', copyArr2);
+
+    console.log('--------------------------------------------------------');
+
+    copyArr2.push(false);
+    console.log('copyArr2에만 false를 push하여 결과적으로\n독립된 배열을 확인');
+    console.log('copyArr: ', copyArr);
+    console.log('copyArr2: ', copyArr2);
+
     return (
         <div>
             DeepCopy
+            <p style={{ backgroundColor: "red", color: "white", padding: "4px", width: "fit-content", fontWeight: "bold" }}>Check the console log</p>
         </div>
     )
 }

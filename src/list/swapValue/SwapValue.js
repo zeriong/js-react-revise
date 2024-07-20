@@ -2,7 +2,7 @@
  * 두 변수의 값을 교환하여 할당하는 방법
  * */
 
-export const SwapValue = () => {
+export default function SwapValue() {
     let data1 = 'str 입니다.';
     let data2 = 10000;
 
