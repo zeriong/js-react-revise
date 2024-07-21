@@ -35,6 +35,10 @@ export default function Hoisting() {
     // 정상적으로 모든 변수들이 할당된 채 실행
     func();
 
+    // 결과적으로 const, let 두 선언자 모두 호이스팅이 일어나지만
+    // 실질적으로 코드의 절차적 실행 순서에 의해서 활용할 수 없는 호이스팅으로서
+    // 실행 개발 불가능 형태로 적용되어진다.
+
     return (
         <div>
             Hoisting
