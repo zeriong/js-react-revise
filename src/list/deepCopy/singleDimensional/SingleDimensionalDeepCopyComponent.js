@@ -19,7 +19,7 @@
  * 얕은 복사를 하기 위한 방법론은 아래 컴포넌트 참조!
  * */
 
-export default function DeepCopy() {
+export default function SingleDimensionalDeepCopyComponent() {
     /*
       얕은 복사가 아닌 완전히 독립적인 오브젝트로 복사하기 위해서는
       스프레드함수(...)와 배열은 slice, 객체는 assign 매서드를 사용할 수 있다.
@@ -107,7 +107,7 @@ export default function DeepCopy() {
 
     return (
         <div>
-            DeepCopy
+            <p>Single Dimensional Deep-Copy Component</p>
             <p style={{ backgroundColor: "red", color: "white", padding: "4px", width: "fit-content", fontWeight: "bold" }}>Check the console log</p>
         </div>
     )

@@ -1,5 +1,5 @@
-import {ReactRenderingOrder} from './list/renderingOrder/ReactRenderingOrder';
-import DeepCopy from './list/deepCopy/DeepCopy';
+import ReactRenderingOrder from './list/renderingOrder/ReactRenderingOrder';
+import SingleDimensionalDeepCopyComponent from './list/deepCopy/singleDimensional/SingleDimensionalDeepCopyComponent';
 import Hoisting from './list/hoisting/Hoisting';
 import SwapValue from './list/swapValue/SwapValue';
 import UseRefAndUseState from './list/useRefAndUseState/UseRefAndUseState';
@@ -10,6 +10,7 @@ import ReactMemoLearnComponent from "./list/reactMemo/ReactMemoLearnComponent";
 import UseCallbackComponent from "./list/useCallback/UseCallbackComponent";
 import UseMemoComponent from "./list/useMemo/UseMemoCompnent";
 import UseIdComponent from "./list/useId/UseIdComponent";
+import MultiDimensionalDeepCopyComponent from "./list/deepCopy/multiDimensional/MultiDimensionalDeepCopyComponent";
 
 function App() {
   return (
@@ -22,7 +23,8 @@ function App() {
         {/*<UseCallbackComponent/>*/}
         {/*<ReactMemoLearnComponent/>*/}
         {/*<ReactRenderingOrder/>*/}
-        <DeepCopy/>
+        <MultiDimensionalDeepCopyComponent/>
+        {/*<SingleDimensionalDeepCopyComponent/>*/}
         {/*<Hoisting/>*/}
         {/*<SwapValue/>*/}
         {/*<UseRefAndUseState/>*/}

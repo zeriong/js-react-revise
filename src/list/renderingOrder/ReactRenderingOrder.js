@@ -1,6 +1,6 @@
 import {useEffect, useLayoutEffect, useState} from 'react';
 
-export const ReactRenderingOrder = () => {
+export default function ReactRenderingOrder() {
     console.log('a')
 
     const [state, setState] = useState(false);
