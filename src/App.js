@@ -11,6 +11,7 @@ import UseCallbackComponent from "./list/useCallback/UseCallbackComponent";
 import UseMemoComponent from "./list/useMemo/UseMemoCompnent";
 import UseIdComponent from "./list/useId/UseIdComponent";
 import MultiDimensionalDeepCopyComponent from "./list/deepCopy/multiDimensional/MultiDimensionalDeepCopyComponent";
+import UseTransitionComponent from "./list/useTransition/UseTransitionComponent";
 
 function App() {
   return (
@@ -18,12 +19,13 @@ function App() {
         <h1>
             Hello World!
         </h1>
+        <UseTransitionComponent/>
         {/*<UseIdComponent/>*/}
         {/*<UseMemoComponent/>*/}
         {/*<UseCallbackComponent/>*/}
         {/*<ReactMemoLearnComponent/>*/}
         {/*<ReactRenderingOrder/>*/}
-        <MultiDimensionalDeepCopyComponent/>
+        {/*<MultiDimensionalDeepCopyComponent/>*/}
         {/*<SingleDimensionalDeepCopyComponent/>*/}
         {/*<Hoisting/>*/}
         {/*<SwapValue/>*/}
