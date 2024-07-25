@@ -6,6 +6,13 @@ export default function UseTransitionComponent() {
     const [inputVal, setInputVal] = useState("");
     const [filtered, setFiltered] = useState([]);
 
+    // 인풋에서 onChange 가 실행되면 mock users data에서 이름에 input value가 포함되는 객체를
+    // 필터링하여 카드섹션으로 렌더링된다.
+
+    // useTransition 이 우선순위를 낮추어 isPending이 실행되는 것을
+    // 시각적으로 구현하기 위해서 faker.js 라이브러리를 활용해서
+    // filter를 통해 복잡한 연산을 구현하였고 이를 통해서 시각적으로
+    // 확인할 수 있게 됨.
     const handleInputChange = ({ target: { value } }) => {
         setInputVal(value);
         startTransition(() => {
