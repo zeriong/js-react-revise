@@ -13,6 +13,17 @@ export default function UseTransitionComponent() {
     // 시각적으로 구현하기 위해서 faker.js 라이브러리를 활용해서
     // filter를 통해 복잡한 연산을 구현하였고 이를 통해서 시각적으로
     // 확인할 수 있게 됨.
+
+    // 유의사항: startTransition는 반드시 setState를 래핑해야 하고
+    // 내부에서 promise 및 async/await 을 포함하는 코드는
+    // 작성할 수 없도록 되어있다.
+
+    // 불가능한 예시
+    // setStartTransition(setState(async () => {
+    //  const res = await fetch("https://server.api.endpoint");
+    //  return res.data
+    // ))
+
     const handleInputChange = ({ target: { value } }) => {
         setInputVal(value);
         startTransition(() => {
