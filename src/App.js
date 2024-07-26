@@ -1,17 +1,17 @@
-import ReactRenderingOrder from './list/renderingOrder/ReactRenderingOrder';
-import SingleDimensionalDeepCopyComponent from './list/deepCopy/singleDimensional/SingleDimensionalDeepCopyComponent';
-import Hoisting from './list/hoisting/Hoisting';
-import SwapValue from './list/swapValue/SwapValue';
-import UseRefAndUseState from './list/useRefAndUseState/UseRefAndUseState';
-import HandMadeUseState from './list/handMadeUseState/HandMadeUseStateComponent';
-import NoneMemoComponent from "./list/reactMemo/noneMemo/NoneMemoComponent";
-import UsingMemoComponent from "./list/reactMemo/usingMemo/UsingMemoComponent";
-import ReactMemoLearnComponent from "./list/reactMemo/ReactMemoLearnComponent";
-import UseCallbackComponent from "./list/useCallback/UseCallbackComponent";
-import UseMemoComponent from "./list/useMemo/UseMemoCompnent";
-import UseIdComponent from "./list/useId/UseIdComponent";
-import MultiDimensionalDeepCopyComponent from "./list/deepCopy/multiDimensional/MultiDimensionalDeepCopyComponent";
-import UseTransitionComponent from "./list/useTransition/UseTransitionComponent";
+import ReactRenderingOrder from './list/react/renderingOrder/ReactRenderingOrder';
+import SingleDimensionalDeepCopyComponent from './list/computerScience/deepCopy/singleDimensional/SingleDimensionalDeepCopyComponent';
+import Hoisting from './list/computerScience/hoisting/Hoisting';
+import SwapValue from './list/computerScience/swapValue/SwapValue';
+import UseRefAndUseState from './list/react/useRefAndUseState/UseRefAndUseState';
+import HandMadeUseState from './list/computerScience/handMadeUseState/HandMadeUseStateComponent';
+import NoneMemoComponent from "./list/react/reactMemo/noneMemo/NoneMemoComponent";
+import UsingMemoComponent from "./list/react/reactMemo/usingMemo/UsingMemoComponent";
+import ReactMemoLearnComponent from "./list/react/reactMemo/ReactMemoLearnComponent";
+import UseCallbackComponent from "./list/react/useCallback/UseCallbackComponent";
+import UseMemoComponent from "./list/react/useMemo/UseMemoCompnent";
+import UseIdComponent from "./list/react/useId/UseIdComponent";
+import MultiDimensionalDeepCopyComponent from "./list/computerScience/deepCopy/multiDimensional/MultiDimensionalDeepCopyComponent";
+import UseTransitionComponent from "./list/react/useTransition/UseTransitionComponent";
 
 function App() {
   return (

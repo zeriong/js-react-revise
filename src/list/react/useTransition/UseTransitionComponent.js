@@ -1,5 +1,5 @@
 import {useState, useTransition} from "react";
-import {users} from "../../mock/users";
+import {users} from "../../../mock/users";
 
 export default function UseTransitionComponent() {
     const [isPending, startTransition] = useTransition();
