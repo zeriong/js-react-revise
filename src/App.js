@@ -12,6 +12,7 @@ import UseMemoComponent from "./list/react/useMemo/UseMemoCompnent";
 import UseIdComponent from "./list/react/useId/UseIdComponent";
 import MultiDimensionalDeepCopyComponent from "./list/computerScience/deepCopy/multiDimensional/MultiDimensionalDeepCopyComponent";
 import UseTransitionComponent from "./list/react/useTransition/UseTransitionComponent";
+import MswComponent from "./list/libs/MSWComponent";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <h1>
             Hello World!
         </h1>
+        <MswComponent/>
         {/*<UseTransitionComponent/>*/}
         {/*<UseIdComponent/>*/}
         {/*<UseMemoComponent/>*/}
