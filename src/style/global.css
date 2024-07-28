@@ -7,3 +7,10 @@ input {
     padding: 4px 12px;
     border-radius: 8px;
 }
+
+button {
+    background-color: lightgray;
+    border-radius: 8px;
+    padding: 4px 8px;
+    border: 1px solid rgba(0, 0, 0, .5);
+}

@@ -19,7 +19,7 @@ export default function MswComponent() {
     return (
         <div>
             <button type="button" className="px-5 py-1 rounded-2xl text-white bg-black" onClick={getUserInfo}>request "get" my name</button>
-            {user && <p>{`name: ${user.name}`}</p>}
+            {user && <p>{`name: ${user?.name}`}</p>}
         </div>
     );
 }

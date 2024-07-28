@@ -12,7 +12,8 @@ import UseMemoComponent from "./list/react/useMemo/UseMemoCompnent";
 import UseIdComponent from "./list/react/useId/UseIdComponent";
 import MultiDimensionalDeepCopyComponent from "./list/computerScience/deepCopy/multiDimensional/MultiDimensionalDeepCopyComponent";
 import UseTransitionComponent from "./list/react/useTransition/UseTransitionComponent";
-import MswComponent from "./list/libs/MSWComponent";
+import MswComponent from "./list/libs/msw/MSWComponent";
+import UseDeferredValueComponent from "./list/react/useDeferredValue/UseDeferredValueComponent";
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
         <h1>
             Hello World!
         </h1>
-        <MswComponent/>
+        <UseDeferredValueComponent/>
+        {/*<MswComponent/>*/}
         {/*<UseTransitionComponent/>*/}
         {/*<UseIdComponent/>*/}
         {/*<UseMemoComponent/>*/}
