@@ -14,6 +14,7 @@ import MultiDimensionalDeepCopyComponent from "./list/computerScience/deepCopy/m
 import UseTransitionComponent from "./list/react/useTransition/UseTransitionComponent";
 import MswComponent from "./list/libs/msw/MSWComponent";
 import UseDeferredValueComponent from "./list/react/useDeferredValue/UseDeferredValueComponent";
+import UseContextComponent from "./list/react/useContext/UseContextComponent";
 
 function App() {
   return (
@@ -21,7 +22,8 @@ function App() {
         <h1>
             Hello World!
         </h1>
-        <UseDeferredValueComponent/>
+        <UseContextComponent/>
+        {/*<UseDeferredValueComponent/>*/}
         {/*<MswComponent/>*/}
         {/*<UseTransitionComponent/>*/}
         {/*<UseIdComponent/>*/}
