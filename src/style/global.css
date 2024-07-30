@@ -14,3 +14,17 @@ button {
     padding: 4px 8px;
     border: 1px solid rgba(0, 0, 0, .5);
 }
+
+.translate-center {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.translate-x-center {
+    left: 50%;
+    transform: translateX(-50%);
+}
+.translate-y-center {
+    top: 50%;
+    transform: translateY(-50%);
+}

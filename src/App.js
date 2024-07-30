@@ -15,6 +15,7 @@ import UseTransitionComponent from "./list/react/useTransition/UseTransitionComp
 import MswComponent from "./list/libs/msw/MSWComponent";
 import UseDeferredValueComponent from "./list/react/useDeferredValue/UseDeferredValueComponent";
 import UseContextComponent from "./list/react/useContext/UseContextComponent";
+import UseReducerComponent from "./list/react/useReducer/UseReducerComponent";
 
 function App() {
   return (
@@ -22,7 +23,8 @@ function App() {
         <h1>
             Hello World!
         </h1>
-        <UseContextComponent/>
+        <UseReducerComponent/>
+        {/*<UseContextComponent/>*/}
         {/*<UseDeferredValueComponent/>*/}
         {/*<MswComponent/>*/}
         {/*<UseTransitionComponent/>*/}
