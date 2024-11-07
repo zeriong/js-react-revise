@@ -39,6 +39,8 @@ export default function Hoisting() {
     // 실질적으로 코드의 절차적 실행 순서에 의해서 활용할 수 없는 호이스팅으로서
     // 실행 개발 불가능 형태로 적용되어진다.
 
+    // 컴파일 단계에서 이루어지는 로직에 대해 이해할 것
+
     return (
         <div>
             Hoisting
